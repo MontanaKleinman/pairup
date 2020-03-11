@@ -1,0 +1,7 @@
+.columnsTwo {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    place-items: center;
+}

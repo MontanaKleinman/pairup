@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 960px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 860px) {
+    font-size: 45%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 720px) {
+    font-size: 35%;
+  }
+
+  @media only screen and (max-width: 650px) {
+    font-size: 30%;
+  }
+
+  @media only screen and (max-width: 560px) {
+    font-size: 25%;
+  }
+}
+
+body {
+  padding: 5vh 5vw;
+  box-sizing: border-box;
+  transition: opacity 1s;
+
+  @media screen and (orientation: portrait) {
+    display: none;
+  }
+}

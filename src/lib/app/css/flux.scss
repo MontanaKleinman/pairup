@@ -1,0 +1,21 @@
+.flux {
+    animation: flux 4s linear infinite;
+  }
+  
+  @keyframes flux {
+    100% {
+      color: rgb(36, 5, 5);
+    }
+    75% {
+      color: rgb(128, 20, 20);
+    }
+    50% {
+      color: rgb(254, 40, 40);
+    }
+    25% {
+      color: rgb(128, 20, 20);
+    }
+    0% {
+      color: rgb(36, 5, 5);
+    }
+  }

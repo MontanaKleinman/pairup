@@ -1,0 +1,5 @@
+@keyframes text-shadow-swap{
+    33%  {text-shadow: 0px 4px 0px #01cccc, 0px 8px 0px #00bdbd, 0px 12px 0px #00e6e6;}
+    66%  {text-shadow: 0px 4px 0px #00bdbd, 0px 8px 0px #00e6e6, 0px 12px 0px #01cccc;} 
+    100% {text-shadow: 0px 4px 0px #00e6e6, 0px 8px 0px #01cccc, 0px 12px 0px #00bdbd;}
+}

@@ -1,0 +1,152 @@
+body-player-info {
+  perspective: 10000;
+  -moz-perspective: 10000;
+}
+
+.difficulty {
+  perspective: 1000;
+  -moz-perspective: 1000;
+}
+
+.cardHome {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  .card__face--front {
+    background-image: none;
+  }
+
+  &.flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  transition: all ease 0.8s;
+  transform-style: preserve-3d;
+  transition: all ease 1.25s;
+  cursor: pointer;
+
+  &__stamp {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+  }
+
+  &.flip {
+    transform: rotateY(180deg);
+    pointer-events: none;
+  }
+
+  &__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: box-shadow ease 3s;
+    border-radius: 25px;
+    background-color: rgb(224, 223, 223);
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    &--front {
+      background-image: url(../../../lib/app/images/diagonal-lines.svg);
+      border: 0.5rem solid white;
+      transition: all ease 1.25s;
+    }
+
+    &--backHome {
+      transform: rotateY(180deg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 0.5rem;
+      background-origin: content-box;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 0.5rem;
+      background-origin: content-box;
+
+      &--0 {
+        background-image: url(../../../lib/app/images/001-bat.svg);
+      }
+
+      &--1 {
+        background-image: url(../../../lib/app/images/002-bird.svg);
+      }
+
+      &--2 {
+        background-image: url(../../../lib/app/images/003-bull.svg);
+      }
+
+      &--3 {
+        background-image: url(../../../lib/app/images/004-camel.svg);
+      }
+
+      &--4 {
+        background-image: url(../../../lib/app/images/005-cat.svg);
+      }
+
+      &--5 {
+        background-image: url(../../../lib/app/images/006-hen.svg);
+      }
+
+      &--6 {
+        background-image: url(../../../lib/app/images/007-cow.svg);
+      }
+
+      &--7 {
+        background-image: url(../../../lib/app/images/008-crocodile.svg);
+      }
+
+      &--8 {
+        background-image: url(../../../lib/app/images/009-deer.svg);
+      }
+
+      &--9 {
+        background-image: url(../../../lib/app/images/010-dog.svg);
+      }
+
+      &--10 {
+        background-image: url(../../../lib/app/images/011-duck.svg);
+      }
+
+      &--11 {
+        background-image: url(../../../lib/app/images/012-elephant.svg);
+      }
+
+      &--12 {
+        background-image: url(../../../lib/app/images/013-fox.svg);
+      }
+
+      &--13 {
+        background-image: url(../../../lib/app/images/014-giraffe.svg);
+      }
+
+      &--14 {
+        background-image: url(../../../lib/app/images/015-goat.svg);
+      }
+
+      &--15 {
+        background-image: url(../../../lib/app/images/016-goose.svg);
+      }
+    }
+  }
+}
