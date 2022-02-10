@@ -30,7 +30,7 @@
     "mathjs": "^6.2.3",
     "mathjs-webpack-loader": "^0.1.0",
     "ndb": "^1.1.5",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
